@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolateria</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pirata+One&family=Updock&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    main {
+        margin-top: 260px;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.5em;
+        font-family: "Arvo", serif;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #bab2a6;
+    }
+
+    .menu_top {
+        width: 100%;
+        height: 170px;
+        border-bottom: 3px solid #4c2b10;
+        border-top: 10px solid #4c2b10;
+        background-color: rgb(183, 168, 149);
+    }
+
+    .top_esp {
+        width: 160px;
+        float: left;
+        padding: 10px;
+    }
+
+    .top_dir {
+        /*titulo*/
+        float: left;
+        text-align: center;
+        font-family: "Arvo", serif;
+        font-size: 100px;
+        color: #4c2b10;
+        padding-left: 35px;
+        padding-top: 20px;
+
+    }
+
+    .menu_donw {
+        background: #4c2b10;
+        height: 70px;
+        text-align: center;
+    }
+
+    .menu {
+        color: #4c2b10;
+        position: relative;
+        top: 15px;
+        padding: 10px;
+    }
+
+    .menu ul {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .menu ul li {
+        background-color: #fbefdf;
+        width: 20%;
+        height: 40px;
+        float: left;
+        display: inline;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+    }
+
+    .menu ul li:hover {
+        background-color: #ffffff;
+    }
+
+    .menu ul {
+        padding: 0;
+        max-width: 500px;
+    }
+
+    .menu ul li{
+        background-color: #4c2b10;
+        color: white;
+        width: 100px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .menu ul li:hover {
+        background-color: #bab2a6;
+    }
+
+    .menu ul ul {
+        display: none;
+    }
+
+    .menu ul li:hover>ul {
+        display: block;
+    }
+
+    .menu ul ul ul {
+        margin-left: 102px;
+        position: absolute;
+        top: 0px;
+    }
+
+    .menu ul ul li:hover {
+        background-color: #bab2a6;
+    }
+
+    .menu ul ul ul li:hover {
+        background-color: #8b7d6a;
+    }
+
+    input {
+        /* "pesquisar" */
+        width: 20%;
+        height: 30px;
+        font-size: 18px;
+        margin: 45px 20px;
+        background-color: #ffffff;
+        border: solid rgb(1, 1, 1) 3px;
+        border-radius: 10px;
+        float: left;
+    }
+
+    .down_down img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        margin: 40px 0px;
+        padding: 5px;
+
+    }
+
+    .down_down {
+        float: left;
+
+    }
+
+    .fundo {
+        background-color: #4c2b10;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    .choc {
+        background-color: #4c2b10;
+        float: left;
+        padding: 80px;
+        text-align: center;
+    }
+
+    .choc img {
+        padding: 23px;
+    }
+
+    .rodape {
+        background-color: rgb(177, 158, 132);
+
+    }
+    .rodape p{
+        font-family:"Arvo", serif ;
+        text-align: center;
+        padding: 5px;
+
+    }
+     .roda{
+        clear: both;
+        background-color:  rgb(177, 158, 132);
+        padding:0;
+        font-family: "Arvo", serif;
+
+    }
+
+    .bot {
+        width: 5%;
+        height: 30px;
+        font-size: 18px;
+        margin: 46px 5px;
+        background-color: #ffffff;
+        border: solid rgb(1, 1, 1) 3px;
+        border-radius: 10px;
+        float: left;
+        text-align: center;
+    }
+
+    .roda .down_meio { /* frase do meio */
+            text-align: center;
+            color: rgb(13, 66, 13);
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+            text-align: center;
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+
+<body>
+
+    <body>
+        <div class="menu_top">
+            <div class="top_esp">
+                <figure>
+                    <img src="img/imgem urbaniza css 2.png" alt="logo" height="90px">
+                </figure>
+            </div>
+            <div class="top_dir">
+                Chocolateria
+            </div>
+            <input type="text" name="pesq" placeholder="Pesquisar">
+            <div class="bot">OK</div>
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/face_logo_02.png" width="20"
+                        height="20"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whats_logo_01.png" width="20"
+                        height="20"></a>
+                <a href="https://wwws. instagram.com/" target="_blank"><img src="img/inst_logo_01.png" width="20"
+                        height="20"></a>
+            </div>
+
+            <div class="clear"></div>
+            <div class="menu_donw">
+                <nav class="menu">
+                    <ul>
+                        <li>HOME
+                            <ul>
+                                <li>Amazonas</li>
+                                <li>Pará</li>
+                                <li>Roraima
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                                <li>Amapá</li>
+                                <li>Rondonia</li>
+                                <li>Tocantins</li>
+                            </ul>
+                        </li>
+                        <li>DOCES
+                            <ul>
+                                <li>Bahia</li>
+                                <li>Pernambuco</li>
+                                <li>Ceara
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                                <li>Sergipe</li>
+                                <li>Alagoas</li>
+                                <li>Rio G Norte</li>
+                            </ul>
+                        </li>
+                        <li>OVOS
+                            <ul>
+                                <li>Mato G. Sul</li>
+                                <li>Mato Grosso</li>
+                                <li>Goias
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>BOMBONS
+                            <ul>
+                                <li>Minas Gerais</li>
+                                <li>São Paulo</li>
+                                <li>E. Santo
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                                <li>Rio de Janeiro</li>
+                            </ul>
+                        </li>
+                        <li>SOBRE
+                            <ul>
+                                <li>Rio G. Sul</li>
+                                <li>Paraná</li>
+                                <li>Sana Catarina
+                                    <ul>
+                                        <li>Capital</li>
+                                        <li>Interior</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="fundo">
+                <span class="imagen"><img src="img/banner.png" width="100%" height="550"></span>
+            </div>
+            <div class="choc">
+                <img src="img/Print 1.png" width="400" height="300">
+                <img src="img/Print 2.png" width="400" height="300">
+                <img src="img/Print 3.png" width="400" height="300">
+                <img src="img/Print 1.png" width="400" height="300">
+                <img src="img/Print 2.png" width="400" height="300">
+                <img src="img/Print 3.png" width="400" height="300">
+            </div>
+           
+            <div class="rodape">
+                <p>Rua dos Operários - Bom Retiro</p>
+                <p>Zona Leste - SP</p>
+            </div> 
+            <div class= "rodape">
+                <p>Entre em contato:</p>
+                <p>14996-7654</p>
+                <p>contato@abc.com</p>
+            </div>
+        </div>
+    </body>
+</html>

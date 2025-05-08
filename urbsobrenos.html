@@ -7,126 +7,277 @@
     <title>Urbaniza</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-        .fundo {
-            background-color: #e0c7c7;
+
+        * {
+            margin: 0;
+            padding: 0;
         }
 
+        .fundo {
+            background-color: #D6CFC5;
+        }
+
+        /* começo do cabeçário */
+        .cabe {
+            width: 100%;
+            height: 100px;
+            background-color: #523923;
+        }
+
+        .logo {
+            float: left;
+            text-indent: 20px;
+            width: 20%;
+            padding: 10px 10px 0px 10px;
+        }
+
+        .cabe ul {
+            /* lista que pertencem ao cabeçário  */
+            float: left;
+            width: 50%;
+            margin: 0px 0px 0px 20px;
+            line-height: 90px;
+            text-align: center;
+        }
+
+        .cabe ul li {
+            /* linha que pertence a lista que pertence ao cabecario */
+            text-decoration: none;
+            display: inline;
+            /* em linha (nao em tópico) */
+            padding: 20px;
+            /* espaço entre os menus */
+            color: #ffffff;
+            font-family: "Spectral", serif;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .cabe ul li:hover {
+            /* mouse em cima, muda a cor (usar no menu urbaniza) */
+            color: #ab9e8c;
+        } 
+        a {
+            text-decoration: none;
+        }
+
+        /* fim do cabeçário */
+
         .h1 {
-            margin: 20px;
+            margin: 0px;
             font-family: "Spectral", serif;
             text-align: center;
             font-size: 80px;
-            color: #7a4848;
-
+            background-color: #D6CFC5;
+            color: #523923;
         }
 
+        .h2 {
+            color: #523923;
+        }
+
+        /* classes referente a imagem e texto pietra */
         .pietra img {
             padding: 0px 150px;
             float: left;
         }
-        .pietra div{
+
+        .pietra div {
             font-family: "Spectral", serif;
-            color: #7a4848;
+            background-color: #D6CFC5;
             font-size: 25px;
+            text-align: justify;
+            padding-right: 70px;
         }
-        .gabi div{
+
+        /* classes referente a imagem e texto gabi */
+        .gabi div {
             font-family: "Spectral", serif;
-            color: #7a4848;
+            color: #523923;
             font-size: 25px;
             float: left;
             margin: 30px;
             margin-top: 130px;
             width: 1000px;
+            text-align: justify;
+            padding-left: 30px;
+
         }
-        .gabi img{
+
+        .gabi img {
             float: left;
             margin-top: 130px;
         }
-        .clear{
+
+        .clear {
             clear: both;
         }
-        .fefe img{
+
+        /* classes referente a imagem e texto felipe */
+        .fefe img {
             padding: 0px 150px;
             float: left;
         }
-        .fefe div{
+
+        .fefe div {
             margin-top: 100px;
             font-family: "Spectral", serif;
-            color: #7a4848;
+            color: #523923;
             font-size: 25px;
+            text-align: justify;
+            padding-right: 70px;
+
+
+        }
+
+        /* classes referente a imagem e texto Matheus*/
+        .mat {
+            font-family: "Spectral", serif;
+            color: #523923;
+            font-size: 25px;
+            float: left;
+            margin: 30px 50px 60px;
+            margin-top: 130px;
+            width: 1000px;
+            text-align: justify;
+            padding-left: 30px;
+
+        }
+
+        .matimg {
+            float: left;
+            margin: 180px 10px 30px 10px;
+        }
+
+       
+
+        /* rodape */
+        .rodape {
+            background-color: #523923;
+            color: #D6CFC5;
+            font-style: italic;
+            font-size: 12px;
+            text-align: center;
+            padding: 30px 100px 30px 10px;
         }
     </style>
 </head>
 
 <body>
+    <!-- começo html cabeçario -->
     <div class="fundo">
-        <div class="h1">Sobre Nós</div>
-        <div class="pietra"> 
-            <img src="img/pietra1.png" height="650" width="445">
-            <div>
-                <h2>Pietra Bertaglia</h2>
-            <p>Pietra Bertaglia, tem 25 anos, é casada, e é uma das fundadoras da Urbaniza, há 2 anos.</p>
-            <p>Sua paixão é pela parte de arquitetura da empresa, responsável principalmente pelos projetos que são
-                feitos em apartamentos, também adiministra os clientes.</p>
-            <p> É formada e pós-graduada em Arquitetura e Urbanismo pela UNESP, atualmente concorre a vaga de doutorado
-                pela USP.
-                Seus projetos costumam aderir ambientes integrados, cheios de harmonia, cores, decorações e com
-                personalidade dos clientes em suas residências, afinal para ela arquitetura é a combinação perfeita da
-                estética descontraída de uma casa com o conforto e a funcionalidade de um lar, já que casas criam e
-                contam memórias.</p>
+        <div class="cabe">
+            <div class="logo">
+                <img src="img/imgem urbaniza css 2.png" width="100" heigh="100">
             </div>
-            
-        </div>
-        <div class="clear"></div>
-        <div class="gabi">
-            <div>
-                <h2>Gabriele Rossini</h2>
-                <p>Gabriele Rossini, tem 23 anos, e é uma arquiteta formada pela USP e especializada em arquitetura
-                doméstica, destacando-se por criar espaços residenciais funcionais, acolhedores e personalizados.</p>
-            <p> É cofundadora do Urbaniza, um site de referência em arquitetura e design residencial, ela combina
-                estética, conforto e sustentabilidade em seus projetos. No escritório onde atua, lidera reformas e
-                construções, sempre com sensibilidade às necessidades dos clientes. Criativa e detalhista, Gabriele
-                acredita no poder da arquitetura para melhorar a qualidade de vida, inspirando outros jovens
-                profissionais com sua visão humanizada e inovadora.</p>
-            </div>
-                
-            <img src="img/rossini.png">
-        </div>
-        <div class="clear"></div>
+            <div> <!-- LISTA DO MENU -->
+                <ul>
+                    <a href="Urbanizahome.html">
+                        <li>HOME</li>
+                    </a>
+                    <li>RESIDENCIAL</li>
+                    <li>APARTAMENTO</li>
+                    <li>ENTRE EM CONTATO</li>
+                </ul>
+                <div class="clear"></div>
+                <!-- fim html cabeçario -->
+                <div class="h1">Sobre Nós
 
-        <div class="fefe"> 
-            <img src="img/Felipe F..png" height="650" width="445">
-            <div>
-               <h2>Felipe Fernandes</h2>
-            <p>Pietra Bertaglia, tem 25 anos, é casada, e é uma das fundadoras da Urbaniza, há 2 anos.</p>
-            <p>Sua paixão é pela parte de arquitetura da empresa, responsável principalmente pelos projetos que são
-                feitos em apartamentos, também adiministra os clientes.</p>
-            <p> É formada e pós-graduada em Arquitetura e Urbanismo pela UNESP, atualmente concorre a vaga de doutorado
-                pela USP.
-                Seus projetos costumam aderir ambientes integrados, cheios de harmonia, cores, decorações e com
-                personalidade dos clientes em suas residências, afinal para ela arquitetura é a combinação perfeita da
-                estética descontraída de uma casa com o conforto e a funcionalidade de um lar, já que casas criam e
-                contam memórias.</p> 
-            </div>
-            
-        </div>
-        <div class="clear"></div>
-        <div class="gabi">
-            <div>
-                <h2>Matheus Bueno</h2>
-                <p>Gabriele Rossini, tem 23 anos, e é uma arquiteta formada pela USP e especializada em arquitetura
-                doméstica, destacando-se por criar espaços residenciais funcionais, acolhedores e personalizados.</p>
-            <p> É cofundadora do Urbaniza, um site de referência em arquitetura e design residencial, ela combina
-                estética, conforto e sustentabilidade em seus projetos. No escritório onde atua, lidera reformas e
-                construções, sempre com sensibilidade às necessidades dos clientes. Criativa e detalhista, Gabriele
-                acredita no poder da arquitetura para melhorar a qualidade de vida, inspirando outros jovens
-                profissionais com sua visão humanizada e inovadora.</p>
-            </div>
-                
-            <img src="img/Captura de tela 2025-03-13 103844.png" width="200" height="200">
-        </div>
-        <div class="clear"></div>
-    </div>
+                    <div class="pietra">
+                        <img src="img/pietra1.png" height="650" width="445">
+                        <div class="h2">
+                            <h2>Pietra Bertaglia</h2>
+                            <p>Pietra Bertaglia, tem 25 anos, é casada, e é uma das fundadoras da Urbaniza, há 2 anos.
+                            </p>
+                            <p>Sua paixão é pela parte de arquitetura da empresa, responsável principalmente pelos
+                                projetos que
+                                são
+                                feitos em apartamentos, também adiministra os clientes.</p>
+                            <p> É formada e pós-graduada em Arquitetura e Urbanismo pela UNESP, atualmente concorre a
+                                vaga de
+                                doutorado
+                                pela USP.
+                                Seus projetos costumam aderir ambientes integrados, cheios de harmonia, cores,
+                                decorações e com
+                                personalidade dos clientes em suas residências, afinal para ela arquitetura é a
+                                combinação
+                                perfeita da
+                                estética descontraída de uma casa com o conforto e a funcionalidade de um lar, já que
+                                casas
+                                criam e
+                                contam memórias.</p>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class="gabi">
+                        <div>
+                            <h2>Gabriele Rossini</h2>
+                            <p>Gabriele Rossini, tem 23 anos, e é uma arquiteta formada pela USP e especializada em
+                                arquitetura
+                                doméstica, destacando-se por criar espaços residenciais funcionais, acolhedores e
+                                personalizados.</p>
+                            <p> É cofundadora do Urbaniza, um site de referência em arquitetura e design residencial,
+                                ela
+                                combina
+                                estética, conforto e sustentabilidade em seus projetos. No escritório onde atua, lidera
+                                reformas
+                                e
+                                construções, sempre com sensibilidade às necessidades dos clientes. Criativa e
+                                detalhista,
+                                Gabriele
+                                acredita no poder da arquitetura para melhorar a qualidade de vida, inspirando outros
+                                jovens
+                                profissionais com sua visão humanizada e inovadora.</p>
+                        </div>
+
+                        <img src="img/gabs uou.png" width="350" height="600">
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="fefe">
+                        <img src="img/Felipe F..png" height="650" width="445">
+                        <div>
+                            <h2>Felipe Fernandes</h2>
+                            <p>Felipe Fernandes,tem 26 anos, é formado na Faculdade de Tecnologia de São Paulo (FATEC),
+                                fez Pós-Graduação em Ciência da Computação do IME-USP, é um profissional na area da
+                                Tecnologia e um dos fundadores da Urbaniza.</p>
+                            <p> Na empresa, atua na área de tecnologia, que é um setor em constante crescimento e
+                                transformação. Sua formação e experiência sugerem que ele possui habilidades tanto
+                                técnicas quanto de gestão, essenciais para quem deseja empreender.</p>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                    <div>
+                        <div class="mat">
+                            <h2>Matheus Bueno</h2>
+                            <p>Matheus Bueno Silva, é um profissional apaixonado por transformar ideias em realidade
+                                através da arquitetura e engenharia. Formado em Arquitetura e Urbanismo pela
+                                Universidade de São Paulo (USP), uma das instituições mais renomadas do Brasil, e em
+                                Engenharia Civil pela Universidade Estadual de Campinas (UNICAMP), reconhecida nacional
+                                e internacionalmente por sua excelência acadêmica.</p>
+                            <p>Ao longo de sua carreira, teve a oportunidade de trabalhar em projetos desafiadores,
+                                desde residências personalizadas até empreendimentos comerciais de grande escala, sempre
+                                buscando inovação e qualidade.</p>
+                            <p>Acredita que a arquitetura vai além da construção de espaços; é sobre criar ambientes que
+                                inspirem, conectem e melhorem a qualidade de vida das pessoas. Seu compromisso é
+                                entregar soluções que atendam às necessidades dos clientes, respeitando prazos,
+                                orçamentos e, principalmente, o meio ambiente.</p>
+                        </div>
+                        <img src="img/eu quero carinho.png" width="350" height="400" class="matimg">
+                    </div>
+                    <!-- começo rodapé -->
+                    <div class="clear"></div>
+                    <div class="rodape">
+                        <p>Urbaniza 2025 🏡 Pietra, Felipe, Gabriele e Matheus</p>
+                        <p>Av. Cel. Clementino Gonçalves, 431-379 - Vila Joaquim Paulino. / Santa Cruz do Rio Pardo-SP
+                        </p>
+                    </div>
+                </div>
 </body>
 
 </html>

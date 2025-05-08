@@ -1,0 +1,49 @@
+Pietra Bertaglia, tem 25 anos, é casada, e é uma das fundadoras da Urbaniza, há 2 anos.</h2>
+                <h2>Sua paixão é pela parte de arquitetura da empresa, responsável principalmente pelos projetos que são feitos em apartamentos, também adiministra os clientes.</h2>
+                <h2>É formada e pós-graduada em Arquitetura e Urbanismo pela UNESP, atualmente concorre a vaga de doutorado pela USP.</h2>
+                <h2>Seus projetos costumam aderir ambientes integrados, cheios de harmonia, cores, decorações e com personalidade dos clientes em suas residências, afinal para ela arquitetura é a combinação perfeita da estética descontraída de uma casa com o conforto e a funcionalidade de um lar, já que casas criam e contam memórias.
+
+
+
+
+ Matheus Bueno Silva, é um profissional apaixonado por transformar ideias em realidade através da arquitetura e engenharia. Formado em Arquitetura e Urbanismo pela Universidade de São Paulo (USP), uma das instituições mais renomadas do Brasil, e em Engenharia Civil pela Universidade Estadual de Campinas (UNICAMP), reconhecida nacional e internacionalmente por sua excelência acadêmica. </h2>
+                <h2> Ao longo de sua carreira, teve a oportunidade de trabalhar em projetos desafiadores, desde residências personalizadas até empreendimentos comerciais de grande escala, sempre buscando inovação e qualidade.</h2>
+                <h2>Acredita que a arquitetura vai além da construção de espaços; é sobre criar ambientes que inspirem, conectem e melhorem a qualidade de vida das pessoas. Seu compromisso é entregar soluções que atendam às necessidades dos clientes, respeitando prazos, orçamentos e, principalmente, o meio ambiente. </h2>
+            </td>
+
+
+
+
+Gabriele Rossini, tem 23 anos, e é uma arquiteta formada pela USP e especializada em arquitetura doméstica, destacando-se por criar espaços residenciais funcionais, acolhedores e personalizados.  </h2>
+                <h2>É cofundadora do Urbaniza, um site de referência em arquitetura e design residencial, ela combina estética, conforto e sustentabilidade em seus projetos. No escritório onde atua, lidera reformas e construções, sempre com sensibilidade às necessidades dos clientes. Criativa e detalhista, Gabriele acredita no poder da arquitetura para melhorar a qualidade de vida, inspirando outros jovens profissionais com sua visão humanizada e inovadora.  </h2>
+            </td>
+
+
+Felipe Fernandes,tem 26 anos, é formado na Faculdade de Tecnologia de São Paulo (FATEC), fez Pós-Graduação em Ciência da Computação do IME-USP, é um profissional na area da Tecnologia e um dos fundadores da Urbaniza.</h2>
+                <h2> Na empresa, atua na área de tecnologia, que é um setor em constante crescimento e transformação. Sua formação e experiência sugerem que ele possui habilidades tanto técnicas quanto de gestão, essenciais para quem deseja empreender.</
+
+
+
+
+.imagem{
+            float: right;
+            padding:0px 0px 150px;
+        }
+        .texto{
+            font-family:"Spectral", serif;
+            color:  #7a4848;
+
+
+
+
+
+
+
+
+
+claro
+
+ #e0c7c7
+
+escuro
+ #7a4848

@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbaniza</title>
 </head>
 <style>
-    .fundo{
-        background-color: ;
+    .fundo {
+        background-color: #D6CFC5;
         width: 100%;
         height: 100%;
     }
+
+    .cabe {
+        width: 100%;
+        height: 100px;
+        background-color: #523923;
+    }
+
+    .logo {
+        float: left;
+        text-indent: 20px;
+        width: 20%;
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    .cabe ul {
+        /* lista que pertencem ao cabeçário  */
+        float: left;
+        width: 50%;
+        margin: 0px 0px 0px 20px;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .cabe ul li {
+        /* linha que pertence a lista que pertence ao cabecario */
+        text-decoration: none;
+        display: inline;
+        /* em linha (nao em tópico) */
+        padding: 20px;
+        /* espaço entre os menus */
+        color: #ffffff;
+        font-family: "Spectral", serif;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+    .cabe ul li:hover {
+        /* mouse em cima, muda a cor (usar no menu urbaniza) */
+        color: #e0c7c7;
+    }
+
+    /* fim do cabeçário */
 </style>
+
 <body>
     <div class="fundo">
-        
+         <div class="cabe">
+        <div class="logo">
+            <img src="img/imgem urbaniza css 2.png" width="100" heigh="100">
+        </div>
+        <div> <!-- LISTA DO MENU -->
+            <ul>
+                <a href="urbsobrenos.html">
+                <li>SOBRE NÓS</li>
+                </a>
+                <li>RESIDENCIAL</li>
+                <li>APARTAMENTO</li>
+                <li>ENTRE EM CONTATO</li>
+            </ul>
+        </div>
     </div>
-    
+
 </body>
+
 </html>
